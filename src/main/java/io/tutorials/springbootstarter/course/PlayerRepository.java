@@ -4,9 +4,8 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface CourseRepository extends CrudRepository<Course, String> {
+public interface PlayerRepository extends CrudRepository<Player, String> {
 	
-	
-	public List<Course> findByTopicId(String topicId);
+	public List<Player> findByTeamId(String teamId);
 
 }

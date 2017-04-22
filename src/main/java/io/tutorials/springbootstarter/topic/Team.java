@@ -4,18 +4,18 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Topic {
+public class Team {
 
 	@Id
 	private String id;
 	private String name;
 	private String description;
 	
-	public Topic() {
+	public Team() {
 		
 	}
 	
-	public Topic(String id, String name, String description) {
+	public Team(String id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;

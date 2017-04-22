@@ -2,9 +2,7 @@ package io.tutorials.springbootstarter.topic;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface TopicRepository extends CrudRepository<Topic, String> {
-	
-	
+public interface TeamRepository extends CrudRepository<Team, String> {
 	
 
 }

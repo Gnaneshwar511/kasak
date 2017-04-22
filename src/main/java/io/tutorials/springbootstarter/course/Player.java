@@ -4,10 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import io.tutorials.springbootstarter.topic.Topic;
+import io.tutorials.springbootstarter.topic.Team;
 
 @Entity
-public class Course {
+public class Player {
 
 	@Id
 	private String id;
@@ -15,18 +15,18 @@ public class Course {
 	private String description;
 
 	@ManyToOne
-	private Topic topic;
+	private Team team;
 
-	public Course() {
+	public Player() {
 
 	}
 
-	public Course(String id, String name, String description, String topicId) {
+	public Player(String id, String name, String description, String teamId) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		this.topic = new Topic(topicId, "", "");
+		this.team = new Team(teamId, "", "");
 	}
 
 	public String getId() {
@@ -53,12 +53,12 @@ public class Course {
 		this.description = description;
 	}
 
-	public Topic getTopic() {
-		return topic;
+	public Team getTeam() {
+		return team;
 	}
 
-	public void setTopic(Topic topic) {
-		this.topic = topic;
+	public void setTeam(Team team) {
+		this.team = team;
 	}
 
 }
