@@ -22,6 +22,7 @@ public class PlayerController {
 		
 		return playerService.getAllPlayers(id);
 	}
+	
 	@RequestMapping("/teams/{teamId}/players/{id}")
 	public Player getPlayer(@PathVariable  String id){
 		return playerService.getPlayer(id);
