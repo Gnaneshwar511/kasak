@@ -1,12 +1,10 @@
-package io.tutorials.springbootstarter.course;
+package io.tutorials.springbootstarter.player;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import io.tutorials.springbootstarter.topic.Team;
 
 @Service
 public class PlayerService {
@@ -16,8 +14,7 @@ public class PlayerService {
 
 	public List<Player> getAllPlayers(String teamId) {
 		List<Player> players = new ArrayList<>();
-		playerRepository.findByTeamId(teamId).forEach(players::add);
-		//players.add(new Player("1", "Harish", "Bowler", "uno"));
+		playerRepository.findByidPlayer(teamId).forEach(players::add);
 		return players;
 	}
 

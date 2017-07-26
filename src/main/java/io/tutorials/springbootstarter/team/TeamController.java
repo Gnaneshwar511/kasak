@@ -1,4 +1,4 @@
-package io.tutorials.springbootstarter.topic;
+package io.tutorials.springbootstarter.team;
 
 import java.util.List;
 
